@@ -1,0 +1,24 @@
+Name: bisim
+Version: 0.1
+OCamlVersion: >= 4.05
+Synopsis: Check CFGs for bisimulation.
+Authors: JT Paasch
+License: LGPL with OCaml linking exception
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Library bisim_lib
+  Path: lib/
+  Modules:
+    Vertex,
+    Edge,
+    Falsifier
+  FindlibName: bisim_lib
+
+Executable bisim
+  Path: src/
+  MainIs: main.ml
+  BuildDepends:
+    bisim_lib
+  Install: false

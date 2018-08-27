@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 1ecc4d9193a0faf347fe6af8345f19b6)
+version = "0.1"
+description = "Check CFGs for bisimulation."
+archive(byte) = "bisim_lib.cma"
+archive(byte, plugin) = "bisim_lib.cma"
+archive(native) = "bisim_lib.cmxa"
+archive(native, plugin) = "bisim_lib.cmxs"
+exists_if = "bisim_lib.cma"
+# OASIS_STOP
+
